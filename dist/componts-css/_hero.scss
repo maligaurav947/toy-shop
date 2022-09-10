@@ -1,0 +1,26 @@
+.main-hero {
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ padding: 0 0.5em;
+ justify-content: space-between;
+
+ .main-hero-text {
+  width: 100%;
+
+  p {
+   width: 90%;
+   text-align: justify;
+  }
+
+  h2 {
+   overflow: hidden;
+   line-height: 1.2;
+  }
+ }
+
+ img {
+  width: 450px;
+  image-rendering: optimizeQuality;
+ }
+}

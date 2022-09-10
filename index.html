@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Shop</title>
+  <link rel="stylesheet" href="/dist/css/main.css">
+  <script src="https://kit.fontawesome.com/ef607e9e8d.js" crossorigin="anonymous"></script>
+
+<body>
+
+  <header Class="main-header">
+    <nav Class="main-header__nav-bar">
+      <div Class="main-header__nav-bar__logo">Toy Shop</div>
+      <ul Class="main-header__nav-bar__links">
+        <li Class="main-header__nav-bar__links__list">
+          <a href="#">Home</a>
+        </li>
+        <li Class="main-header__nav-bar__links__list">
+          <a href="#product">Collection</a>
+        </li>
+        <li Class="main-header__nav-bar__links__list">
+          <a href="#support">About Us</a>
+        </li>
+        <li Class="main-header__nav-bar__links__list">
+          <a href="#contact">Contact Us</a>
+        </li>
+        <li Class="main-header__nav-bar__links__icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div Class="circle-plus" id="cardSection"></div>
+        </li>
+      </ul>
+      <span id="menu">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+      <span id="cross">
+        <i class="fa-solid fa-xmark-large"></i>
+      </span>
+    </nav>
+  </header>
+  <!-- Hero -->
+  <section Class="main-hero">
+    <div Class="main-hero-text">
+      <h2 Class="main-title">
+        OUR TOYS
+        <br />
+        MAKE YOUR BABY
+        <span Class="color-red">
+          SMILE
+          <i class="fa-solid fa-face-smile"></i>
+        </span>
+      </h2>
+      <p Class="main-info">
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+        below for those interested. Sections 1.10.32 and 1.10.33 from "de
+        Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+        exact original form, accompanied by English versions from the 1914
+        translation by H. Rackham.
+      </p>
+    </div>
+    <img
+      src="https://s3-alpha-sig.figma.com/img/884b/29e5/e7c1fc280d2c2fb3a8c59620daeec01b?Expires=1663545600&Signature=c-iEtBIiQdvv~pi4uKTpwDgz9~jhsu5cMeJ3zltyjzl6el8i0E1WtmM0sib3cV3QkXuso39cdv2r1DKsRWjxc5A-E5EdIMLvMOObjEBkYvXY2uNxpzoC-ohS8~uLt4qda3uh4Lh1eO3tyVxcQsJHbW~qvRmzAo8ZCCBqanUnWscOK60UC9p~sElTuCHv6z41LtjtcMMeNPUF2XKs~k7j7P8vn43msesW3otCOzPymGLe7n2DvzlwvcqJX06vlA09DQkgjAqM52JcFjP9Lbud25nqcYqfVXv9pwNmATlKCBVHqx19pRmew34V~gNqvX-t37eG8bYLWkh5Ub1xc0yFVw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" />
+  </section>
+
+  <!--product  -->
+  <section Class="main-product" id="product">
+    <h2 Class="main-title">THE COLLECTION</h2>
+    <main>
+      <div Class="product">
+        <div class="product-design"><img
+            src="https://s3-alpha-sig.figma.com/img/7357/8a79/8613b80f74aff8404c23aae3645217d1?Expires=1663545600&amp;Signature=PdvqQKL3LGAlHWbqDhsvPU8tKZpOBfhBOW2LekSQMPyWXV~pXRsGMnBXEwcKQP7SmOndwChrK4PlutTLSqg0wjL269EBZWzbdeHk~tapRUwQaWWpDFVP4-yN~UWQnAck61f0iNeGj9n2RTkX-UUtXNHhOgVECEpJR4Y0glfKiy4f5uLHEYqnoPcYZH~3kpqZUcyzONnHWQDBK44mSKymow2HWr1sfJean6Mqfu~yg1NpsGmax7Fb9vw7e4jGMvuGhE4BIKIGH0F~PioHY5z05CX2CjZjTqrel9ha~u2Y5Y6NAK27pzKB-pUxND1TlHhSQuQ2hVbSwIvSA~zTUvKaOg__&amp;Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            class="img-product">
+          <div class="product-text">
+            <h4 class="product-title">BOY &amp; GIRL SITTING ON THE BEACH</h4>
+            <p class="product-info">There are many variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injected humour</p>
+            <div class="flex">
+              <div class="flex-justfiy">
+                <h4 class="product-price-text">Price :</h4>
+                <h4 class="product-price">$25.99</h4>
+              </div>
+              <button class="product-btn" id="productbtn">SHOP Now</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="product-design"><img src="https://cdn.pixabay.com/photo/2015/10/25/14/43/bucket-1005891_960_720.jpg"
+            class="img-product">
+          <div class="product-text">
+            <h4 class="product-title">bucket toys sand beach vacation</h4>
+            <p class="product-info">There are many variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injected humour</p>
+            <div class="flex">
+              <div class="flex-justfiy">
+                <h4 class="product-price-text">Price :</h4>
+                <h4 class="product-price">$15.03</h4>
+              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-design"><img src="https://cdn.pixabay.com/photo/2014/08/29/23/08/toy-car-431356_960_720.jpg"
+            class="img-product">
+          <div class="product-text">
+            <h4 class="product-title">toy car souvenir bus vehicle</h4>
+            <p class="product-info">There are many variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injected humour</p>
+            <div class="flex">
+              <div class="flex-justfiy">
+                <h4 class="product-price-text">Price :</h4>
+                <h4 class="product-price">$17.85</h4>
+              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-design"><img src="https://cdn.pixabay.com/photo/2016/03/16/15/22/barbie-1260989_960_720.jpg"
+            class="img-product">
+          <div class="product-text">
+            <h4 class="product-title">barbie doll children toys doll</h4>
+            <p class="product-info">There are many variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injected humour</p>
+            <div class="flex">
+              <div class="flex-justfiy">
+                <h4 class="product-price-text">Price :</h4>
+                <h4 class="product-price">$18.56</h4>
+              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-design"><img
+            src="https://cdn.pixabay.com/photo/2019/04/14/20/05/duck-meet-4127713_960_720.jpg" class="img-product">
+          <div class="product-text">
+            <h4 class="product-title">duck meet ducks rubber ducks</h4>
+            <p class="product-info">There are many variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injected humour</p>
+            <div class="flex">
+              <div class="flex-justfiy">
+                <h4 class="product-price-text">Price :</h4>
+                <h4 class="product-price">$11.12</h4>
+              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-design"><img
+            src="https://cdn.pixabay.com/photo/2020/11/22/16/45/nutcracker-5767159__340.jpg" class="img-product">
+          <div class="product-text">
+            <h4 class="product-title">nutcracker toy figurine christmas</h4>
+            <p class="product-info">There are many variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injected humour</p>
+            <div class="flex">
+              <div class="flex-justfiy">
+                <h4 class="product-price-text">Price :</h4>
+                <h4 class="product-price">$19.57</h4>
+              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!-- Support -->
+  <section Class="main-support" id="support">
+    <main>
+      <h3 Class="main-title">PEOPELE SUPPORT US</h3>
+      <div Class="main-support-div ">
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img src="https://cdn.pixabay.com/photo/2021/06/15/16/11/man-6339003_960_720.jpg" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img src="https://cdn.pixabay.com/photo/2016/11/22/21/42/woman-1850703_960_720.jpg" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img src="https://cdn.pixabay.com/photo/2019/11/03/20/11/portrait-4599553_960_720.jpg" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img src="https://ichef.bbci.co.uk/news/300/cpsprodpb/4A81/production/_115337091_christina_adane_copy.jpg" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img src="https://cdn.pixabay.com/photo/2017/04/04/10/51/girl-2201009_960_720.jpg" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
+        </div>
+      </div>
+
+
+
+      <div Class="main-support-div">
+        <div data-os="fade-left" data-aos="fade-right" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" />
+        </div>
+        <div data-os="fade-left" data-aos="fade-right" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+        </div>
+        <div data-os="fade-left" data-aos="fade-right" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
+        </div>
+        <div data-os="fade-left" data-aos="fade-right" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80" />
+        </div>
+        <div data-os="fade-left" data-aos="fade-right" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" />
+        </div>
+        <div data-os="fade-left" data-aos="fade-right" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=461&q=80" />
+        </div>
+      </div>
+
+      <div Class="main-support-div">
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNtaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            Class="center" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            Class="center" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            Class="center" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+        </div>
+        <div data-os="fade-right" data-aos="fade-left" data-aos-offset="100" data-aos-delay="2" data-aos-duration="500"
+          data-aos-easing="linear" data-aos-once="false" data-aos-anchor-placement="center" Class="circle">
+          <img
+            src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c21pbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+        </div>
+      </div>
+    </main>
+  </section>
+  <!-- contact -->
+  <section Class="main-contact" id="contact">
+    <h2 Class="main-title">Contact</h2>
+    <div Class="contact-contanier">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29728.402928852767!2d74.86757451618708!3d21.348508492850307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdf2df9310caa83%3A0x11cf13f51b3b8d25!2sShirpur%2C%20Maharashtra%20425405!5e0!3m2!1sen!2sin!4v1662830250677!5m2!1sen!2sin"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div Class="input-data">
+        <form action="https://formspree.io/f/xzbowwea" method="POST" Class="form">
+          <label Class="label-list">
+            Name: <br />
+            <input name="Name" type="text" required />
+          </label>
+          <br />
+          <label Class="label-list">
+            Email: <br />
+            <input name="Email" type="email" required />
+          </label>
+          <br />
+          <label Class="label-list">
+            Message:
+            <br />
+            <textarea name="message"></textarea>
+          </label>
+          <br />
+          <button type="submit" Class="btn1">
+            SEND
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer Class="footer_area">
+    <div Class="container">
+      <div Class="row">
+        <div Class="col-md-3 col-sm-6">
+          <div Class="single_ftr">
+            <h4 Class="sf_title">Contacts</h4>
+            <ul>
+              <li>4080 Repperts Coaol Road Sackson, MS 00201 USA</li>
+              <li>
+                (+123) 685 78 455 <br /> (+064) 336 987 245
+              </li>
+              <li>Contact@yourcompany.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div Class="col-md-3 col-sm-6">
+          <div Class="single_ftr">
+            <h4 Class="sf_title">Information</h4>
+            <ul>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Delivery Information</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div Class="col-md-3 col-sm-6">
+          <div Class="single_ftr">
+            <h4 Class="sf_title">Services</h4>
+            <ul>
+              <li>
+                <a href="#">Returns</a>
+              </li>
+              <li>
+                <a href="#">Site Map</a>
+              </li>
+              <li>
+                <a href="#">Wish List</a>
+              </li>
+              <li>
+                <a href="#">My Account</a>
+              </li>
+              <li>
+                <a href="#">Order History</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div Class="col-md-3 col-sm-6">
+          <div Class="single_ftr">
+            <h4 Class="sf_title">Newsletter</h4>
+            <div Class="newsletter_form">
+              <p>
+                There are many variations of passages of Lorem Ipsum
+                available, but the majority have{" "}
+              </p>
+              <form method="post" Class="form-inline">
+                <input name="EMAIL" id="email" placeholder="Enter Your Email" Class="form-control" type="email" />
+                <button type="submit" Class="btn btn-default">
+                  <i Class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div Class="ftr_btm_area">
+      <div Class="container">
+        <div Class="row">
+          <div Class="col-sm-4">
+            <div Class="ftr_social_icon">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/people/Mali-Gaurav/100008371203796/">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div Class="col-sm-4">
+            <p Class="copyright_text text-center">
+              © 2022 All Rights Reserved Mali Gaurav
+            </p>
+          </div>
+
+          <div Class="col-sm-4">
+            <div Class="payment_mthd_icon text-right">
+              <ul>
+                <li>
+                  <i Class="fa fa-cc-paypal"></i>
+                </li>
+                <li>
+                  <i Class="fa fa-cc-visa"></i>
+                </li>
+                <li>
+                  <i Class="fa fa-cc-discover"></i>
+                </li>
+                <li>
+                  <i Class="fa fa-cc-mastercard"></i>
+                </li>
+                <li>
+                  <i Class="fa fa-cc-amex"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--  -->
+  <div Class="main main-espliec">
+    <div Class="es1"></div>
+    <div Class="es2"></div>
+    <div Class="es3"></div>
+    <div Class="es4"></div>
+  </div>
+
+  <script src="script.js"></script>
+  </head>
+</body>
+
+</html>

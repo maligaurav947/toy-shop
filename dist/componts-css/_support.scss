@@ -1,0 +1,45 @@
+.main-support {
+  height: 100%;
+
+  display: grid;
+  align-items: center;
+
+  .main-support-div {
+    padding: 0.3em 0.5em;
+    display: flex;
+    margin: 0.5em 0;
+    align-items: center;
+    background-color: rgba(204, 204, 204, 0.39);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb", endColorstr="#fc466b", GradientType=1);
+
+    box-shadow: inset 0px 11px 8px -15px rgb(130, 128, 128),
+      inset 0px -11px 8px -15px rgb(130, 128, 128);
+    justify-content: space-evenly;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-position: top;
+      object-fit: cover;
+    }
+
+    .center {
+      object-position: center;
+    }
+
+    .contacin {
+      object-fit: contain;
+    }
+  }
+}

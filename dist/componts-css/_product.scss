@@ -1,0 +1,138 @@
+.main-product {
+  h2 {
+    text-align: center;
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 30px;
+    transition: linear;
+  }
+}
+
+.product-design {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.466);
+  width: 380px;
+  height: 460px;
+
+  overflow: hidden;
+
+  .img-product {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .product-text {
+    padding: 0.2em 0.3em;
+  }
+
+  .product-title {
+    padding-top: 0.3em;
+    overflow: hidden;
+    width: 335.5px;
+    font-family: "Indie Flower", cursive;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 118.5%;
+
+    text-transform: capitalize;
+  }
+
+  .product-info {
+    padding: 0.5em 0;
+    overflow: hidden;
+
+    font-family: "Inconsolata", monospace;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(88, 85, 85);
+    font-size: 1.5rem;
+    line-height: 18px;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.3em;
+    padding-top: 0.5em;
+    overflow: hidden;
+  }
+
+  .flex-justfiy {
+    display: flex;
+    align-items: center;
+  }
+
+  .product-price-text {
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 118.5%;
+    overflow: hidden;
+  }
+
+  .product-price {
+    overflow: hidden;
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 118.5%;
+    color: #04ff00;
+  }
+
+  .product-btn {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, 0.15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+      sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+
+    &:active {
+      box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+        0 8px 12px 6px rgb(60 64 67 / 15%);
+      outline: none;
+    }
+
+    &:focus {
+      background: #f6f9fe;
+      color: #174ea6;
+    }
+
+    &:hover {
+      background: #f6f9fe;
+      color: #174ea6;
+    }
+  }
+}
