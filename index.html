@@ -10,6 +10,14 @@
   <script src="https://kit.fontawesome.com/ef607e9e8d.js" crossorigin="anonymous"></script>
   </head>
 <body>
+  <div id="overlaymess">
+    <span id="overlaymesscross">
+      <i class="fa-solid fa-x"></i>
+    </span>
+    <h3 id="overtext"></h3>
+  
+  </div>
+  <div id="overback"></div>
 <div class="overlay" id="overLay">
   <span id="overlayCross">
     <i class="fa-solid fa-x"></i>
@@ -17,13 +25,13 @@
   <h2 class="main-title">Login</h2>
   <div class="login-form">
     Login Email :
-    <input type="email" placeholder="Enter Your Email" id="">
+    <input type="email" placeholder="Enter Your Email" id="emailid">
     <br>
     Login Password
-    <input type="password" placeholder="Enter Your Password" name="" id="">
+    <input type="password" placeholder="Enter Your Password" name="" id="passid">
   </div>
   <div class="overlaybtn">
-    <input type="submit" value="Submit" class="button-30">
+    <input type="submit" value="Login" class="button-30" id="loginbtn">
     <button class="button-30">Sign Up</button>
   </div>
 </div>
@@ -49,8 +57,8 @@
         <li Class="main-header__nav-bar__links__list">
         Contact Us
         </li></a>
-        <a href="" onclick="openOverlay()">
-          <li Class="main-header__nav-bar__links__list">
+        <a>
+          <li Class="main-header__nav-bar__links__list" id="loginbtnli">
             Login
           </li>
         </a>

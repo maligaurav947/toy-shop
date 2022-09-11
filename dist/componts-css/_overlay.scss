@@ -5,8 +5,8 @@
  left: 50%;
  width: 45vw;
  height: 45vh;
- 
-
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+display: none;
  transform: translate(-50%,-50%);
  background-color: aliceblue;
 h2{
@@ -93,6 +93,7 @@ h2{
  right: 0;
  overflow: hidden;
  display: grid;
+ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
  place-content: center;
     overflow: hidden;
     padding: 0.1em;
@@ -108,4 +109,56 @@ h2{
       background-color: #33d286;
       border-color: #33d286;
     }
+}
+
+#overlaymess{
+position: fixed;
+top: 90%;
+left: 50%;
+z-index: 9999999;
+transform: translate(-50%,-50%);
+background-color: white;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+width: 70vh;
+display: none;
+height: 10vh;
+h3{
+  width: 100%;
+ display: grid;
+ font-size: 2rem;
+ place-content: center;
+ font-family: "Raleway", sans-serif;
+ color: black;
+}
+#overlaymesscross{
+  position: fixed;
+ top: 5px;
+ right: 5px;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    overflow: hidden;
+    
+    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1.5px solid black;
+    &:hover,
+    &:focus {
+      transition: background-color 250ms linear;
+      background-color: #33d286;
+      border-color: #33d286;
+    }
+  }
+}
+
+#overback{
+  height: 100%;
+  width: 100%;
+  background-color: #36395a9a;
+  z-index: 9999;
+  position: fixed;
+  display: none;
 }
