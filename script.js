@@ -79,7 +79,7 @@ closeBtn.addEventListener("click", () => {
 function addToCard() {
   if (emaiId.value === "") {
     overlaymess.style.display = "flex";
-    overtext.innerText = "Please Create First Account";
+    overtext.innerText = "To Access The Card Login First";
   } else {
     cardSection.innerText = n++;
   }
