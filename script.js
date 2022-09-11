@@ -13,14 +13,22 @@ const loginbtnli = document.getElementById("loginbtnli");
 const overtext = document.getElementById("overtext");
 const overback = document.getElementById("overback");
 let n = 1;
-const gabbar = "gabbar";
-const pass = "123";
+
 
 loginBtn.addEventListener("click", () => {
   overlaymess.style.display = "flex";
-  if (emaiId.value === gabbar) {
-    overtext.innerText = `Welcome ${emaiId.value} Have Nice Day`;
-    if (passId.value === pass) {
+  if (
+    emaiId.value === account[0].email ||
+    account[1].email ||
+    account[2].email
+  ) {
+    overtext.innerText = `Welcome Have Nice Day`;
+    loginbtnli.innerText = "Sign Out";
+    if (
+      passId.value === account[0].pass ||
+      account[1].pass ||
+      account[2].pass
+    ) {
     } else {
       overtext.innerText = `Incorret Password`;
     }
@@ -32,8 +40,15 @@ loginBtn.addEventListener("click", () => {
 });
 
 loginbtnli.addEventListener("click", () => {
-  overback.style.display = "block";
-  overLay.style.display = "block";
+  if (loginbtnli.innerHTML === `Sign Out`) {
+    overLay.style.display = "none";
+    overback.style.display = "none";
+    overlaymess.style.display = "none";
+    loginbtnli.innerText = "Login";
+  } else {
+    overback.style.display = "block";
+    overLay.style.display = "block";
+  }
 });
 overlaymesscross.addEventListener("click", () => {
   overlaymess.style.display = "none";
@@ -69,3 +84,29 @@ function displayNone() {
   overback.style.display = "none";
   overlaymess.style.display = "none";
 }
+
+// const accountid1 = {
+//   email: "maligaurav947@gmail.com",
+//   pass: "123",
+//   Name: "Mali Gaurav",
+// };
+// const accountid2 = {};
+
+const accountid1 = {
+  email: "maligaurav947@gmail.com",
+  pass: "123",
+  Name: "Mali Gaurav",
+};
+const accoundid2 = {
+  email: "mahajanjaydeep1@gmail.com",
+  pass: "1",
+  Name: "Mahajan Jaydeep",
+};
+const accoundid3 = {
+  email: "nikhiljoshi23@gmail.com",
+  pass: "23",
+  Name: "Nikhil Joshi",
+};
+const account = [accountid1, accoundid2, accoundid3];
+
+function accountfuntion() {}
