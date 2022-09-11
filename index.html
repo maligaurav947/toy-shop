@@ -8,25 +8,52 @@
   <title>Toy Shop</title>
   <link rel="stylesheet" href="./dist/css/main.css">
   <script src="https://kit.fontawesome.com/ef607e9e8d.js" crossorigin="anonymous"></script>
-
+  </head>
 <body>
-
+<div class="overlay" id="overLay">
+  <span id="overlayCross">
+    <i class="fa-solid fa-x"></i>
+  </span>
+  <h2 class="main-title">Login</h2>
+  <div class="login-form">
+    Login Email :
+    <input type="email" placeholder="Enter Your Email" id="">
+    <br>
+    Login Password
+    <input type="password" placeholder="Enter Your Password" name="" id="">
+  </div>
+  <div class="overlaybtn">
+    <input type="submit" value="Submit" class="button-30">
+    <button class="button-30">Sign Up</button>
+  </div>
+</div>
   <header Class="main-header">
     <nav Class="main-header__nav-bar">
       <div Class="main-header__nav-bar__logo">Toy Shop</div>
       <ul Class="main-header__nav-bar__links" id="navLinks">
+        <a href="#">
         <li Class="main-header__nav-bar__links__list">
-          <a href="#">Home</a>
+        Home
         </li>
+      </a>
+      <a href="#product">
         <li Class="main-header__nav-bar__links__list">
-          <a href="#product">Collection</a>
+          Collection
         </li>
+      </a>
+      <a href="#support">
         <li Class="main-header__nav-bar__links__list">
-          <a href="#support">About Us</a>
-        </li>
+        About Us
+        </li></a>
+        <a href="#contact">
         <li Class="main-header__nav-bar__links__list">
-          <a href="#contact">Contact Us</a>
-        </li>
+        Contact Us
+        </li></a>
+        <a href="" onclick="openOverlay()">
+          <li Class="main-header__nav-bar__links__list">
+            Login
+          </li>
+        </a>
         <li Class="main-header__nav-bar__links__icon">
           <i class="fa-solid fa-cart-shopping"></i>
           <div Class="circle-plus" id="cardSection"></div>
@@ -81,7 +108,7 @@
                 <h4 class="product-price-text">Price :</h4>
                 <h4 class="product-price">$25.99</h4>
               </div>
-              <button class="product-btn" id="productbtn">SHOP Now</button>
+              <button class="product-btn" id="productbtn" onclick="addToCard()">SHOP Now</button>
             </div>
           </div>
 
@@ -96,7 +123,7 @@
               <div class="flex-justfiy">
                 <h4 class="product-price-text">Price :</h4>
                 <h4 class="product-price">$15.03</h4>
-              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+              </div><button class="product-btn" id="productbtn" onclick="addToCard()">SHOP Now</button>
             </div>
           </div>
         </div>
@@ -110,7 +137,7 @@
               <div class="flex-justfiy">
                 <h4 class="product-price-text">Price :</h4>
                 <h4 class="product-price">$17.85</h4>
-              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+              </div><button class="product-btn" id="productbtn" onclick="addToCard()">SHOP Now</button>
             </div>
           </div>
         </div>
@@ -126,7 +153,7 @@
               <div class="flex-justfiy">
                 <h4 class="product-price-text">Price :</h4>
                 <h4 class="product-price">$18.56</h4>
-              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+              </div><button class="product-btn" id="productbtn" onclick="addToCard()">SHOP Now</button>
             </div>
           </div>
         </div>
@@ -140,7 +167,7 @@
               <div class="flex-justfiy">
                 <h4 class="product-price-text">Price :</h4>
                 <h4 class="product-price">$11.12</h4>
-              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+              </div><button class="product-btn" id="productbtn" onclick="addToCard()">SHOP Now</button>
             </div>
           </div>
         </div>
@@ -154,7 +181,7 @@
               <div class="flex-justfiy">
                 <h4 class="product-price-text">Price :</h4>
                 <h4 class="product-price">$19.57</h4>
-              </div><button class="product-btn" id="productbtn">SHOP Now</button>
+              </div><button class="product-btn" id="productbtn" onclick="addToCard()">SHOP Now</button>
             </div>
           </div>
         </div>
@@ -456,8 +483,8 @@
     <div Class="es4"></div>
   </div>
 
-  <script src="script.js"></script>
-  </head>
+  <script src="script.js">AOS.init();</script>
+
 </body>
 
 </html>

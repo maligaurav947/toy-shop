@@ -25,7 +25,9 @@
       display: flex;
       align-items: center;
       position: relative;
-
+      a {
+        color: black;
+      }
       &__list,
       &__icon {
         font-size: 2.2rem;
@@ -37,22 +39,23 @@
         position: relative;
         font-family: "Raleway", sans-serif;
 
-        a {
-          color: black;
-        }
+      
       }
     }
   }
 }
-
+a:hover{
+  color: white;
+}
 .main-header__nav-bar__links__list:hover {
-  a {
-    color: white;
-  }
+
 
   transition: background-color 800ms;
 
   background-color: black;
+
+
+
 }
 
 .circle-plus {
