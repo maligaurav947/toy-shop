@@ -17,18 +17,24 @@ let n = 1;
 
 loginBtn.addEventListener("click", () => {
   overlaymess.style.display = "flex";
-  if (
-    emaiId.value === account[0].email ||
-    account[1].email ||
-    account[2].email
-  ) {
-    overtext.innerText = `Welcome Have Nice Day`;
+  if (emaiId.value === accountid1.email) {
+    overtext.innerText = `Welcome ${accountid1.Name} Have Nice Day`;
     loginbtnli.innerText = "Sign Out";
-    if (
-      passId.value === account[0].pass ||
-      account[1].pass ||
-      account[2].pass
-    ) {
+    if (passId.value === accountid1.pass) {
+    } else {
+      overtext.innerText = `Incorret Password`;
+    }
+  } else if (emaiId.value === accountid2.email) {
+    overtext.innerText = `Welcome ${accountid2.Name} Have Nice Day`;
+    loginbtnli.innerText = "Sign Out";
+    if (passId.value === accountid2.pass) {
+    } else {
+      overtext.innerText = `Incorret Password`;
+    }
+  } else if (emaiId.value === accountid3.email) {
+    overtext.innerText = `Welcome ${accountid3.Name} Have Nice Day`;
+    loginbtnli.innerText = "Sign Out";
+    if (passId.value === accountid3.pass) {
     } else {
       overtext.innerText = `Incorret Password`;
     }
@@ -97,16 +103,14 @@ const accountid1 = {
   pass: "123",
   Name: "Mali Gaurav",
 };
-const accoundid2 = {
+const accountid2 = {
   email: "mahajanjaydeep1@gmail.com",
   pass: "1",
   Name: "Mahajan Jaydeep",
 };
-const accoundid3 = {
+const accountid3 = {
   email: "nikhiljoshi23@gmail.com",
   pass: "23",
   Name: "Nikhil Joshi",
 };
 const account = [accountid1, accoundid2, accoundid3];
-
-function accountfuntion() {}
