@@ -46,8 +46,9 @@ const itembtnminusQ4 = document.getElementById("itembtnminusQ4");
 const itembtnminusQ5 = document.getElementById("itembtnminusQ5");
 const itembtnminusQ6 = document.getElementById("itembtnminusQ6");
 const grandprice = document.getElementById('grandprice');
+const loaderlo = document.getElementById("loader");
 
-//acount more to come 
+//acount more to come
 const accountid1 = {
   email: "maligaurav@gmail.com",
   pass: "123",
@@ -71,7 +72,10 @@ let itemQ4text = 2;
 let itemQ5text = 2;
 let itemQ6text = 2;
 
-//funtion 
+//funtion
+function loader() {
+  loaderlo.style.display = "none";
+}
 
 function addToCard() {
   if (emaiId.value === "") {
