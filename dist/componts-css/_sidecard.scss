@@ -1,0 +1,36 @@
+#sidecard{
+ width: 30vw;
+ height: 100vh;
+ background-color: aliceblue;
+ position: fixed;
+ top: 0px;
+ right: 0px;
+ z-index: 999999999999999999;
+display: none;
+}
+#sidecardcross{
+ position: fixed;
+ top: 5px;
+ right: 5px;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    overflow: hidden;
+    
+    font-size:2.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1.5px solid black;
+    &:hover,
+    &:focus {
+      transition: background-color 250ms linear;
+      background-color: #33d286;
+      border-color: #33d286;
+    }
+}
+
+#item1,#item2,#item3,#item4,#item5,#item6{
+  display: none;
+}
