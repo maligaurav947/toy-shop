@@ -47,12 +47,12 @@ const itembtnminusQ5 = document.getElementById("itembtnminusQ5");
 const itembtnminusQ6 = document.getElementById("itembtnminusQ6");
 
 const accountid1 = {
-  email: "maligaurav947@gmail.com",
+  email: "maligaurav@gmail.com",
   pass: "123",
   Name: "Mali Gaurav",
 };
 const accountid2 = {
-  email: "mahajanjaydeep1@gmail.com",
+  email: "mahajaydeep1@gmail.com",
   pass: "1",
   Name: "Mahajan Jaydeep",
 };
@@ -63,18 +63,24 @@ const accountid3 = {
 };
 let n = 1;
 
-let itemQ1text = 1;
-let itemQ2text = 1;
-let itemQ3text = 1;
-let itemQ4text = 1;
-let itemQ5text = 1;
-let itemQ6text = 1;
+let itemQ1text = 2;
+let itemQ2text = 2;
+let itemQ3text = 2;
+let itemQ4text = 2;
+let itemQ5text = 2;
+let itemQ6text = 2;
 function addToCard() {
   if (emaiId.value === "") {
     overlaymess.style.display = "flex";
     overtext.innerText = "To Access The Card Login First";
   } else {
     cardSection.innerText = n++;
+  }
+}
+
+function checkneg() {
+  if (itemQ1text <= 0) {
+    itemQ1.innerText = 0;
   }
 }
 
@@ -166,44 +172,80 @@ proitem6.addEventListener("click", () => {
 
 itembtnplusQ1.addEventListener("click", () => {
   itemQ1.innerText = itemQ1text++;
+  if (itemQ1text >= 10) {
+    itemQ1.innerText = 10;
+  }
 });
 itembtnplusQ2.addEventListener("click", () => {
   itemQ2.innerText = itemQ2text++;
+  if (itemQ2text >= 10) {
+    itemQ2.innerText = 10;
+  }
 });
 
 itembtnplusQ3.addEventListener("click", () => {
   itemQ3.innerText = itemQ3text++;
+  if (itemQ3text >= 10) {
+    itemQ3.innerText = 10;
+  }
 });
 
 itembtnplusQ4.addEventListener("click", () => {
   itemQ4.innerText = itemQ4text++;
+  if (itemQ4text >= 10) {
+    itemQ4.innerText = 10;
+  }
 });
 
 itembtnplusQ5.addEventListener("click", () => {
   itemQ5.innerText = itemQ5text++;
+  if (itemQ5text >= 10) {
+    itemQ5.innerText = 10;
+  }
 });
 
 itembtnplusQ6.addEventListener("click", () => {
   itemQ6.innerText = itemQ6text++;
+  if (itemQ6text >= 10) {
+    itemQ6.innerText = 10;
+  }
 });
 
 itembtnminusQ1.addEventListener("click", () => {
   itemQ1.innerText = itemQ1text--;
+  if (itemQ1text <= 0) {
+    itemQ1.innerText = 0;
+  }
 });
 itembtnminusQ2.addEventListener("click", () => {
   itemQ2.innerText = itemQ2text--;
+  if (itemQ2text <= 0) {
+    itemQ2.innerText = 0;
+  }
 });
 itembtnminusQ3.addEventListener("click", () => {
   itemQ3.innerText = itemQ3text--;
+  if (itemQ3text <= 0) {
+    itemQ3.innerText = 0;
+  }
 });
 itembtnminusQ4.addEventListener("click", () => {
   itemQ4.innerText = itemQ4text--;
+  if (itemQ4text <= 0) {
+    itemQ4.innerText = 0;
+  }
 });
 itembtnminusQ5.addEventListener("click", () => {
   itemQ5.innerText = itemQ5text--;
+  if (itemQ5text <= 0) {
+    itemQ5.innerText = 0;
+  }
 });
 itembtnminusQ6.addEventListener("click", () => {
   itemQ6.innerText = itemQ6text--;
+  if (itemQ6text <= 0) {
+    itemQ6.innerText = 0;
+  }
 });
 
 
