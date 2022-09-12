@@ -45,7 +45,9 @@ const itembtnminusQ3 = document.getElementById("itembtnminusQ3");
 const itembtnminusQ4 = document.getElementById("itembtnminusQ4");
 const itembtnminusQ5 = document.getElementById("itembtnminusQ5");
 const itembtnminusQ6 = document.getElementById("itembtnminusQ6");
+const grandprice = document.getElementById('grandprice');
 
+//acount more to come 
 const accountid1 = {
   email: "maligaurav@gmail.com",
   pass: "123",
@@ -62,13 +64,15 @@ const accountid3 = {
   Name: "Nikhil Joshi",
 };
 let n = 1;
-
 let itemQ1text = 2;
 let itemQ2text = 2;
 let itemQ3text = 2;
 let itemQ4text = 2;
 let itemQ5text = 2;
 let itemQ6text = 2;
+
+//funtion 
+
 function addToCard() {
   if (emaiId.value === "") {
     overlaymess.style.display = "flex";
@@ -89,6 +93,8 @@ function displayNone() {
   overback.style.display = "none";
   overlaymess.style.display = "none";
 }
+
+//login to the account
 loginBtn.addEventListener("click", () => {
   overlaymess.style.display = "flex";
   if (emaiId.value === accountid1.email) {
@@ -118,6 +124,9 @@ loginBtn.addEventListener("click", () => {
     overtext.innerText = "You don't Have Account";
   }
 });
+
+
+//login btn in header
 loginbtnli.addEventListener("click", () => {
   if (loginbtnli.innerHTML === `Sign Out`) {
     overLay.style.display = "none";
@@ -129,25 +138,41 @@ loginbtnli.addEventListener("click", () => {
     overLay.style.display = "block";
   }
 });
+
+//overlay messages
 overlaymesscross.addEventListener("click", () => {
   overlaymess.style.display = "none";
 });
+
+//overlay icon
 overlayCross.addEventListener("click", () => {
   displayNone();
 });
 
+
+//login overback
 overback.addEventListener("click", () => {
   displayNone();
 });
+
+//shoping card btn
 iconbtn.addEventListener("click", () => {
   sidecard.style.display = "grid";
 });
+
+//sidecard icon
 sidecardcross.addEventListener("click", () => {
   sidecard.style.display = "none";
 });
+
+
+
+//item add to card
 proitem1.addEventListener("click", () => {
   addToCard();
   item1.style.display = "flex";
+  
+  
 });
 proitem2.addEventListener("click", () => {
   addToCard();
@@ -170,6 +195,8 @@ proitem6.addEventListener("click", () => {
   item6.style.display = "flex";
 });
 
+
+//item add
 itembtnplusQ1.addEventListener("click", () => {
   itemQ1.innerText = itemQ1text++;
   if (itemQ1text >= 10) {
@@ -178,6 +205,7 @@ itembtnplusQ1.addEventListener("click", () => {
 });
 itembtnplusQ2.addEventListener("click", () => {
   itemQ2.innerText = itemQ2text++;
+
   if (itemQ2text >= 10) {
     itemQ2.innerText = 10;
   }
@@ -210,7 +238,7 @@ itembtnplusQ6.addEventListener("click", () => {
     itemQ6.innerText = 10;
   }
 });
-
+//item minus
 itembtnminusQ1.addEventListener("click", () => {
   itemQ1.innerText = itemQ1text--;
   if (itemQ1text <= 0) {
@@ -249,8 +277,7 @@ itembtnminusQ6.addEventListener("click", () => {
 });
 
 
-
-
+//mobile device
 openBTN.addEventListener("click", () => {
   openBTN.style.display = "none";
   navLinks.style.display = "flex";

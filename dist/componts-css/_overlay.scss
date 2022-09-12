@@ -1,59 +1,59 @@
-.overlay{
- position: fixed;
- z-index: 9999;
- top: 50%;
- left: 50%;
- width: 45vw;
- height: 45vh;
- box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-display: none;
- transform: translate(-50%,-50%);
- background-color: aliceblue;
-h2{
- text-align: center;
+.overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 45vw;
+  height: 45vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  display: none;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    input {
+      margin-top: 0.2vh;
+      padding: 0.2em;
+      height: 35px;
+      width: 25.5rem;
+      border: none;
+      background-color: transparent;
+      border-bottom: 1.5px solid black;
+      outline: none;
+    }
+  }
+  .btn-login {
+    width: 100px;
+    height: 33px;
+    padding: 0.3em;
+  }
 }
-.login-form{
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
- input{
-  margin-top: 0.2vh;
-  padding: 0.2em;
-  height: 35px;
-  width: 25.5rem;
-  border: none;
-  background-color: transparent;
-  border-bottom: 1.5px solid black;
-  outline: none;
- }
-}
-.btn-login{
-
- width: 100px;
- height: 33px;
- padding: 0.3em;
-}
-
-}
-.overlaybtn{
- position: absolute;
- bottom: 15px;
- right: 50px;
- overflow: hidden;
+.overlaybtn {
+  position: absolute;
+  bottom: 15px;
+  right: 50px;
+  overflow: hidden;
 }
 .button-30 {
   align-items: center;
   appearance: none;
-  background-color: #FCFCFD;
+  background-color: #fcfcfd;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #36395A;
+  color: #36395a;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 48px;
   justify-content: center;
   line-height: 1;
@@ -64,82 +64,84 @@ h2{
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow 0.15s, transform 0.15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   font-size: 18px;
 }
 
 .button-30:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
 .button-30:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
 .button-30:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
+  box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
 
-#overlayCross{
- position: fixed;
- top: 15px;
- right: 0;
- overflow: hidden;
- display: grid;
- box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
- place-content: center;
-    overflow: hidden;
-    padding: 0.1em;
-    font-size: 2rem;
-    margin-right: 0.6em;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: 2px solid black;
-    &:hover,
-    &:focus {
-      transition: background-color 250ms linear;
-      background-color: #33d286;
-      border-color: #33d286;
-    }
+#overlayCross {
+  position: fixed;
+  top: 15px;
+  right: 0;
+  overflow: hidden;
+  display: grid;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  place-content: center;
+  overflow: hidden;
+  padding: 0.1em;
+  font-size: 2rem;
+  margin-right: 0.6em;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid black;
+  &:hover,
+  &:focus {
+    transition: background-color 250ms linear;
+    background-color: #33d286;
+    border-color: #33d286;
+  }
 }
 
-#overlaymess{
-position: fixed;
-top: 90%;
-left: 50%;
-z-index: 9999999;
-transform: translate(-50%,-50%);
-background-color: white;
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-width: 70vh;
-display: none;
-height: 10vh;
-h3{
-  width: 100%;
- display: grid;
- font-size: 2rem;
- place-content: center;
- font-family: "Raleway", sans-serif;
- color: black;
-}
-#overlaymesscross{
+#overlaymess {
   position: fixed;
- top: 5px;
- right: 5px;
- overflow: hidden;
- display: flex;
- align-items: center;
- justify-content: center;
+  top: 90%;
+  left: 50%;
+  z-index: 9999999;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  width: 70vh;
+  display: none;
+  height: 10vh;
+  h3 {
+    width: 100%;
+    display: grid;
+    font-size: 2rem;
+    place-content: center;
+    font-family: "Raleway", sans-serif;
+    color: black;
+  }
+  #overlaymesscross {
+    position: fixed;
+    top: 5px;
+    right: 5px;
     overflow: hidden;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
     font-size: 1rem;
     width: 20px;
     height: 20px;
@@ -154,7 +156,7 @@ h3{
   }
 }
 
-#overback{
+#overback {
   height: 100%;
   width: 100%;
   background-color: #36395a9a;
