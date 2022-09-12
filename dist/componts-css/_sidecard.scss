@@ -6,7 +6,8 @@
  top: 0px;
  right: 0px;
  z-index: 999999999999999999;
-display: none;
+display: grid;
+overflow: hidden;
 }
 #sidecardcross{
  position: fixed;
@@ -32,5 +33,83 @@ display: none;
 }
 
 #item1,#item2,#item3,#item4,#item5,#item6{
-  display: none;
+
+}
+#sidecardBtn{
+  cursor: pointer;
+  right: 0px;
+  bottom: 15px;
+  position: fixed;
+  width: 150px;
+  height: 45px;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #33d286;
+  &:hover{
+   
+  }
+}
+.grand-price{
+  position: absolute;
+  left: 15px;
+  bottom:70px;
+  font-size: 3.5rem;
+}
+.item{
+
+  margin-top: 2.5vh;
+  padding: 0.5em;
+  height: 100%;
+.items{
+  display: flex;
+align-items: center;
+margin: 0.2em 0;
+border: 1.5px solid black;
+}
+
+  img{
+    object-fit: contain;
+  }
+}
+.item-btn{
+  padding: 0 0.3em;
+display: flex;
+align-items: center;
+justify-content: space-around;
+#itembtnplus,#itembtnminus{
+  width: 25px;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  padding: 0.2em;
+  font-size: 1rem;
+  height: 25px;
+  outline: none;
+  border: none;
+  background-color: skyblue;
+  color: white;
+}
+}
+.item-text{
+  width: 50%;
+  text-transform: lowercase;
+  text-align: left;
+  font-weight: 400;
+  padding: 0 0.2em 0 0.5em;
+  font-size: 1.7rem;
+}
+#quantiy{
+  text-align: left;padding: 0 0.3em;
+  font-size: 1.4rem;
+}
+#grandprice{
+position: fixed;
+right: 15px;
+bottom:70px;
+color: #33d286;
+text-align: center;
+font-size: 3.5rem;
 }
