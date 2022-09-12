@@ -4,9 +4,10 @@
  background-color: aliceblue;
  position: fixed;
  top: 0px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
  right: 0px;
  z-index: 999999999999999999;
-display: grid;
+display: none;
 overflow: hidden;
 }
 #sidecardcross{
@@ -24,6 +25,7 @@ overflow: hidden;
     height: 50px;
     border-radius: 100%;
     border: 1.5px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     &:hover,
     &:focus {
       transition: background-color 250ms linear;
@@ -33,7 +35,7 @@ overflow: hidden;
 }
 
 #item1,#item2,#item3,#item4,#item5,#item6{
-
+display: none;
 }
 #sidecardBtn{
   cursor: pointer;
@@ -67,7 +69,7 @@ overflow: hidden;
   display: flex;
 align-items: center;
 margin: 0.2em 0;
-border: 1.5px solid black;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
   img{
@@ -79,7 +81,7 @@ border: 1.5px solid black;
 display: flex;
 align-items: center;
 justify-content: space-around;
-#itembtnplus,#itembtnminus{
+.itembtnplus,.itembtnminus{
   width: 25px;
   overflow: hidden;
   display: grid;
@@ -101,7 +103,7 @@ justify-content: space-around;
   padding: 0 0.2em 0 0.5em;
   font-size: 1.7rem;
 }
-#quantiy{
+.quantiy{
   text-align: left;padding: 0 0.3em;
   font-size: 1.4rem;
 }

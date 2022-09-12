@@ -27,6 +27,25 @@ const proitem3 = document.getElementById("proitem3");
 const proitem4 = document.getElementById("proitem4");
 const proitem5 = document.getElementById("proitem5");
 const proitem6 = document.getElementById("proitem6");
+const itemQ1 = document.getElementById("itemQ1");
+const itemQ2 = document.getElementById("itemQ2");
+const itemQ3 = document.getElementById("itemQ3");
+const itemQ4 = document.getElementById("itemQ4");
+const itemQ5 = document.getElementById("itemQ5");
+const itemQ6 = document.getElementById("itemQ6");
+const itembtnplusQ1 = document.getElementById("itembtnplusQ1");
+const itembtnplusQ2 = document.getElementById("itembtnplusQ2");
+const itembtnplusQ3 = document.getElementById("itembtnplusQ3");
+const itembtnplusQ4 = document.getElementById("itembtnplusQ4");
+const itembtnplusQ5 = document.getElementById("itembtnplusQ5");
+const itembtnplusQ6 = document.getElementById("itembtnplusQ6");
+const itembtnminusQ1 = document.getElementById("itembtnminusQ1");
+const itembtnminusQ2 = document.getElementById("itembtnminusQ2");
+const itembtnminusQ3 = document.getElementById("itembtnminusQ3");
+const itembtnminusQ4 = document.getElementById("itembtnminusQ4");
+const itembtnminusQ5 = document.getElementById("itembtnminusQ5");
+const itembtnminusQ6 = document.getElementById("itembtnminusQ6");
+
 const accountid1 = {
   email: "maligaurav947@gmail.com",
   pass: "123",
@@ -43,6 +62,13 @@ const accountid3 = {
   Name: "Nikhil Joshi",
 };
 let n = 1;
+
+let itemQ1text = 1;
+let itemQ2text = 1;
+let itemQ3text = 1;
+let itemQ4text = 1;
+let itemQ5text = 1;
+let itemQ6text = 1;
 function addToCard() {
   if (emaiId.value === "") {
     overlaymess.style.display = "flex";
@@ -137,6 +163,52 @@ proitem6.addEventListener("click", () => {
   addToCard();
   item6.style.display = "flex";
 });
+
+itembtnplusQ1.addEventListener("click", () => {
+  itemQ1.innerText = itemQ1text++;
+});
+itembtnplusQ2.addEventListener("click", () => {
+  itemQ2.innerText = itemQ2text++;
+});
+
+itembtnplusQ3.addEventListener("click", () => {
+  itemQ3.innerText = itemQ3text++;
+});
+
+itembtnplusQ4.addEventListener("click", () => {
+  itemQ4.innerText = itemQ4text++;
+});
+
+itembtnplusQ5.addEventListener("click", () => {
+  itemQ5.innerText = itemQ5text++;
+});
+
+itembtnplusQ6.addEventListener("click", () => {
+  itemQ6.innerText = itemQ6text++;
+});
+
+itembtnminusQ1.addEventListener("click", () => {
+  itemQ1.innerText = itemQ1text--;
+});
+itembtnminusQ2.addEventListener("click", () => {
+  itemQ2.innerText = itemQ2text--;
+});
+itembtnminusQ3.addEventListener("click", () => {
+  itemQ3.innerText = itemQ3text--;
+});
+itembtnminusQ4.addEventListener("click", () => {
+  itemQ4.innerText = itemQ4text--;
+});
+itembtnminusQ5.addEventListener("click", () => {
+  itemQ5.innerText = itemQ5text--;
+});
+itembtnminusQ6.addEventListener("click", () => {
+  itemQ6.innerText = itemQ6text--;
+});
+
+
+
+
 openBTN.addEventListener("click", () => {
   openBTN.style.display = "none";
   navLinks.style.display = "flex";
