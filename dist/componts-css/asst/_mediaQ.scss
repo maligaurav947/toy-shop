@@ -188,8 +188,22 @@ a{
 }
 #sidecard{
   width: 80%;
+ 
+  .item{
+    margin-top: 5.5vh;
+  
+   .items{
+    height: 100px;
+    overflow: hidden;
+    img{
+      width: 100%;
+     }
+   }
+  
+  }
 }
 #overlaymess{
   width: 100%;
 }
+
 }
