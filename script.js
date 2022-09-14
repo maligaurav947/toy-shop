@@ -103,22 +103,29 @@ loginBtn.addEventListener("click", () => {
   overlaymess.style.display = "flex";
   if (emaiId.value === accountid1.email) {
     overtext.innerText = `Welcome ${accountid1.Name} Have Nice Day`;
-    loginbtnli.innerText = "Sign Out";
     if (passId.value === accountid1.pass) {
+      overLay.style.display = "none";
+      overback.style.display = "none";
+      loginbtnli.innerText = "Sign Out";
     } else {
       overtext.innerText = `Incorret Password`;
     }
   } else if (emaiId.value === accountid2.email) {
     overtext.innerText = `Welcome ${accountid2.Name} Have Nice Day`;
-    loginbtnli.innerText = "Sign Out";
+    
     if (passId.value === accountid2.pass) {
+      loginbtnli.innerText = "Sign Out"; 
+      overLay.style.display = "none";
+      overback.style.display = "none";
     } else {
       overtext.innerText = `Incorret Password`;
     }
   } else if (emaiId.value === accountid3.email) {
     overtext.innerText = `Welcome ${accountid3.Name} Have Nice Day`;
-    loginbtnli.innerText = "Sign Out";
     if (passId.value === accountid3.pass) {
+      loginbtnli.innerText = "Sign Out";
+      overLay.style.display = "none";
+      overback.style.display = "none";
     } else {
       overtext.innerText = `Incorret Password`;
     }
