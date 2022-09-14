@@ -168,7 +168,14 @@ overback.addEventListener("click", () => {
 
 //shoping card btn
 iconbtn.addEventListener("click", () => {
-  sidecard.style.display = "grid";
+  if (loginbtnli.innerHTML === `Sign Out`) {
+    sidecard.style.display = "grid";
+    overlaymess.style.display = "none";
+  } else {
+    overlaymess.style.display = "flex";
+    overtext.innerText = "Login To The Account First";
+  }
+ 
 });
 
 //sidecard icon
