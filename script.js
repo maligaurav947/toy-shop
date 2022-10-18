@@ -84,6 +84,9 @@ function addToCard() {
   } else {
     cardSection.innerText = n++;
   }
+  setTimeout(() => {
+    overlaymess.style.display = "none";
+  }, 2500);
 }
 
 function checkneg() {
@@ -112,9 +115,9 @@ loginBtn.addEventListener("click", () => {
     }
   } else if (emaiId.value === accountid2.email) {
     overtext.innerText = `Welcome ${accountid2.Name} Have Nice Day`;
-    
+
     if (passId.value === accountid2.pass) {
-      loginbtnli.innerText = "Sign Out"; 
+      loginbtnli.innerText = "Sign Out";
       overLay.style.display = "none";
       overback.style.display = "none";
     } else {
@@ -134,8 +137,10 @@ loginBtn.addEventListener("click", () => {
   } else {
     overtext.innerText = "You don't Have Account";
   }
+  setTimeout(() => {
+    overlaymess.style.display = "none";
+  }, 3000);
 });
-
 
 //login btn in header
 loginbtnli.addEventListener("click", () => {
